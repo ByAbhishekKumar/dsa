@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
-int largestSumofSubarray(int arr[], int n)
+int largestSumofSubarray(int arr[], int n)   //O(N) time, kadane's algorithm
 {
     int curr=0;int max=0;
     for (int i = 0; i < n; i++)
