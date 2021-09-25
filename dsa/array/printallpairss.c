@@ -12,7 +12,7 @@ void printAllPairs(int arr[], int size)
     }
 }
 
-void main()
+void main()   //(work done i.e time)  o(n3) and space is o(1)
 {
     int arr[50] = {0};
     int size;
