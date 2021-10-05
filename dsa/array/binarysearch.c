@@ -1,17 +1,17 @@
 #include<stdio.h>
 int binarysearch(int arr[],int n,int key){
-	int s=0,e = n-1,mid;
+	int s=0,e = n-1,mid; //declering middle,start and end index
 	while(s<=e){
-		mid = (s + e)/2;
-		if(arr[mid] == key)
+		mid = (s + e)/2;  //calculate current middle index
+		if(arr[mid] == key)   // checking if middle lelement is equal to the key to search if yes than return its index
 			return mid;
-		else if(arr[mid]<key)
+		else if(arr[mid]<key) //if middle is less than key then set start index = middle element index +1 
 			s = mid + 1;
 		else 
-			e = mid - 1;
+			e = mid - 1;  //if middle is greater than key then end = middle -1 ;
 		
 	}
-	return -1;	
+	return -1;	// if index not found return -1
 
 }
 void main(){
