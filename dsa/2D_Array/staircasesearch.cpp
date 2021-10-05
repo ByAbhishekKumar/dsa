@@ -23,7 +23,7 @@ pair<int, int> staircaseSearch(int arr[][4], int n, int m, int key)
         else
             i++;
     }
-    return { i, j };
+    return { i, j  };
 }
 
 int main(){
