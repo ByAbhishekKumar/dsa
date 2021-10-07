@@ -29,9 +29,9 @@ int main()
         scanf("%d", &arr[i]);
     }
     for (int i = 0; i < size; i++)
-    {
+    { 
         printf("%d ", arr[i]);
-    }
+    } 
     printf("\n");
     large = largestSumofSubarray(arr, size);
     printf("largest sum of subarray is: %d", large);
