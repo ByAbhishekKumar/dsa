@@ -32,6 +32,10 @@ int main(){
                     {16,21,24},
                     {35,36,42}};
     int n = 4,m=3;
-    pair<int,int> x = staircaseSearch(arr,n,m,42);
+    pair<int,int> x = staircaseSearch(arr,n,m,7);
+    if(x.first == -1 or x.second == -1){
+        cout<<"NOT FOUND"<<endl;
+    }
+    else
     cout<<x.first<<" "<<x.second<<endl;
     }
